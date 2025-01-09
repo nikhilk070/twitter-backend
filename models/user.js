@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 mongoose
-  .connect(process.env.db)
+  .connect("mongodb://localhost:27017/miniproject")
   .then(() => {
     console.log("Connected to MongoDB");
   })
